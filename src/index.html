@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usuários</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Cadastro de Usuários</h1>
+      <p class="subtitle">Preencha os campos para criar sua conta.</p>
+
+      <form id="registrationForm" novalidate>
+        <div class="field">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+          <small class="error" data-error-for="name"></small>
+        </div>
+
+        <div class="field">
+          <label for="username">Usuário</label>
+          <input id="username" name="username" type="text" autocomplete="username">
+          <small class="error" data-error-for="username"></small>
+        </div>
+
+        <div class="field">
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" autocomplete="new-password">
+          <small class="error" data-error-for="password"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <small class="error" data-error-for="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="birthDate">Data de nascimento</label>
+          <input id="birthDate" name="birthDate" type="date" autocomplete="bday">
+          <small class="error" data-error-for="birthDate"></small>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p id="formMessage" class="form-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
